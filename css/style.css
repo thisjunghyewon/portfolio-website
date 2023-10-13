@@ -196,7 +196,7 @@ button:focus,
   text-align: center;
 }
 .grid__item p {
-  height: 45%;
+  height: 60%;
   margin-bottom: 10px;
   font-size: var(--largeFontSize);
 }
