@@ -191,6 +191,26 @@ button:focus,
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+
+  .skill-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+  }
+  .skill-detail {
+    background-color: #fff;
+    margin: 0.3em;
+    padding: 0.5em;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 7em;
+    font-size: 0.8em;
+    text-align: center;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
 }
 .grid__item h2 {
   text-align: center;
