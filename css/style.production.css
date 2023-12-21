@@ -24,9 +24,16 @@ main {
 }
 
 .main_logo {
+<<<<<<< Updated upstream
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+=======
+    
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+>>>>>>> Stashed changes
 }
 h2 {
   font-size: 24px;
