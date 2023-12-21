@@ -6,6 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="./img/favicon_io/favicon-32x32.png">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,147 +15,176 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="./css/style.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+   </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+   </script>
    <title>Work - Hyewon Jung</title>
 </head>
 
 <body>
    <header class="page-header">
-      <!-- Add Logo here -->
-      <img src="./img/logo_small.png" alt="logo" class="page-header__item main_logo">
-      <nav class="main-navigation page-header__item">
-         <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-               <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-            </li>
-            <li role="presentation">
-               <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-            </li>
-            <li role="presentation">
-               <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-            </li>
-            <li role="presentation">
-               <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-            </li>
-         </ul>
+      <!-- 부트스트랩 Navbar 시작 -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <!-- 로고 -->
+         <a class="navbar-brand" href="#">
+            <img src="./img/logo_small.png" alt="logo" class="page-header__item main_logo">
+         </a>
+
+         <!-- 햄버거 버튼 -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!-- 네비게이션 메뉴 -->
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="about.html">About</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="work.html">Work</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+            </ul>
+         </div>
       </nav>
+      <!-- 부트스트랩 Navbar 종료 -->
    </header>
    <!-- Main content -->
-   <section>
-      <h1 class="sectionnWork">Work</h1>
-      <div class="grid">
-         <div class="grid__item">
-            <h2>myFlix Movie App - Angular client</h2>
-            <img src="img/work/myFlix-angular.JPG" class="grid-img" alt="">
-            <p>
-               The client side of a movie browsing app, made with Angular and designed with Angular-Material.
-               It allows users to register, log in and browse through movies.
-               They can add movies to their list of favourites and they can view their profile details and edit them as
-               they wish.
-            </p>
-            <section class="skill-wrapper">
-               <span class="skill-detail">TypeScript</span>
-               <span class="skill-detail">Angular</span>
-               <span class="skill-detail">Material</span>
-               <span class="skill-detail">TypeDoc</span>
-            </section>
-            <a href="https://thisjunghyewon.github.io/myFlix-Angular-client/">Live demo</a>
-            <a href="https://github.com/thisjunghyewon/myFlix-Angular-client">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-            <h2>Chat to That App</h2>
-            <img src="img/work/chat.JPG" class="grid-img" alt="">
-            <p>
-               This chat app for mobile devices provides users with a chat interface and options to take and share
-               pictures and the user's location on a Google map view.
-            </p>
-            <section class="skill-wrapper">
-               <span class="skill-detail">React Native</span>
-               <span class="skill-detail">Expo</span>
-               <span class="skill-detail">Firebase</span>
-               <span class="skill-detail">GiftedChat</span>
-            </section>
-            <a href="https://github.com/thisjunghyewon/chat">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-            <h2>Meet</h2>
-            <img src="img/work/meet.JPG" class="grid-img" alt="">
-            <p>
-               Meet is built to be a place where web developers from all around the world connect to one another through
-               events in different cities near them. They can use the Meet App to search for events within their city.
-            </p>
-            <section class="skill-wrapper">
-               <span class="skill-detail">React</span>
-               <span class="skill-detail">AWS Lambda</span>
-               <span class="skill-detail">Jest</span>
-               <span class="skill-detail">Enzyme</span>
-               <span class="skill-detail">Pupeeteer</span>
-            </section>
-            <a href="https://thisjunghyewon.github.io/meet-v2/">Live demo</a>
-            <a href="https://github.com/thisjunghyewon/meet-v2">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-            <h2>myFlix Movie App - React client</h2>
-            <img src="img/work/myflix.JPG" class="grid-img" alt="">
-            <p>
-               This application is the front-end of a movie app, including general information about the movie itself,
-               like the description and genre, plus the director of the movie, as well as the biography of the director.
-
-               It also allows users to create a new user, including information about the user, plus allowing the user
-               to change their data, as well as adding or removing movies from their list of favorites, and allowing
-               them to delete their account.
-            </p>
-            <section class="skill-wrapper">
-               <span class="skill-detail">React</span>
-               <span class="skill-detail">Node.js</span>
-               <span class="skill-detail">Express</span>
-               <span class="skill-detail">MongoDB</span>
-               <span class="skill-detail">Bootstrap</span>
-            </section>
-            <a href="https://thiskino.netlify.app/">Live demo</a>
-            <a href="https://github.com/thisjunghyewon/myFlix-client">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-            <h2>Pokemon Index</h2>
-            <img src="img/work/pokedex.JPG" class="grid-img" alt="">
-            <p>
-               This app was designed with HTML, CSS, and ES6+ JavaScript for the average, working trainer who needs a
-               simple, portable Pokédex for their quest to catch 'em all! I built it throughout the intro to JavaScript
-               course of my CareerFoundry bootcamp.
-            </p>
-            <section class="skill-wrapper">
-               <span class="skill-detail">JavaScript</span>
-               <span class="skill-detail">jQuery</span>
-               <span class="skill-detail">Bootstrap</span>
-               <span class="skill-detail">HTML5</span>
-               <span class="skill-detail">SCSS</span>
-            </section>
-            <a href="https://github.com/thisjunghyewon/pokedex">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-            <h2>Mobile web app_5</h2>
-            <p>
-               Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've
-               created the HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-            <h2>Mobile web app_6</h2>
-            <p>
-               Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've
-               created the HTML and CSS templates.
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
+   <main>
+      <div class="main_first_section">
+         <h1>Work</h1>
       </div>
+      <section class="work">
+         <div class="grid">
+            <div class="grid__item">
+               <h2>myFlix Movie App - Angular client</h2>
+               <img src="img/work/myFlix-angular.JPG" class="grid-img" alt="">
+               <p>
+                  The client side of a movie browsing app, made with Angular and designed with Angular-Material.
+                  It allows users to register, log in and browse through movies.
+                  They can add movies to their list of favourites and they can view their profile details and edit them
+                  as
+                  they wish.
+               </p>
+               <section class="skill-wrapper">
+                  <span class="skill-detail">TypeScript</span>
+                  <span class="skill-detail">Angular</span>
+                  <span class="skill-detail">Material</span>
+                  <span class="skill-detail">TypeDoc</span>
+               </section>
+               <a href="https://thisjunghyewon.github.io/myFlix-Angular-client/">Live demo</a>
+               <a href="https://github.com/thisjunghyewon/myFlix-Angular-client">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+               <h2>Chat to That App</h2>
+               <img src="img/work/chat.JPG" class="grid-img" alt="">
+               <p>
+                  This chat app for mobile devices provides users with a chat interface and options to take and share
+                  pictures and the user's location on a Google map view.
+               </p>
+               <section class="skill-wrapper">
+                  <span class="skill-detail">React Native</span>
+                  <span class="skill-detail">Expo</span>
+                  <span class="skill-detail">Firebase</span>
+                  <span class="skill-detail">GiftedChat</span>
+               </section>
+               <a href="https://github.com/thisjunghyewon/chat">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+               <h2>Meet</h2>
+               <img src="img/work/meet.JPG" class="grid-img" alt="">
+               <p>
+                  Meet is built to be a place where web developers from all around the world connect to one another
+                  through
+                  events in different cities near them. They can use the Meet App to search for events within their
+                  city.
+               </p>
+               <section class="skill-wrapper">
+                  <span class="skill-detail">React</span>
+                  <span class="skill-detail">AWS Lambda</span>
+                  <span class="skill-detail">Jest</span>
+                  <span class="skill-detail">Enzyme</span>
+                  <span class="skill-detail">Pupeeteer</span>
+               </section>
+               <a href="https://thisjunghyewon.github.io/meet-v2/">Live demo</a>
+               <a href="https://github.com/thisjunghyewon/meet-v2">See project on GitHub</a>
+               <a href="case.html">Case study</a>
+            </div>
+            <div class="grid__item">
+               <h2>myFlix Movie App - React client</h2>
+               <img src="img/work/myflix.JPG" class="grid-img" alt="">
+               <p>
+                  This application is the front-end of a movie app, including general information about the movie
+                  itself,
+                  like the description and genre, plus the director of the movie, as well as the biography of the
+                  director.
 
-   </section>
+                  It also allows users to create a new user, including information about the user, plus allowing the
+                  user
+                  to change their data, as well as adding or removing movies from their list of favorites, and allowing
+                  them to delete their account.
+               </p>
+               <section class="skill-wrapper">
+                  <span class="skill-detail">React</span>
+                  <span class="skill-detail">Node.js</span>
+                  <span class="skill-detail">Express</span>
+                  <span class="skill-detail">MongoDB</span>
+                  <span class="skill-detail">Bootstrap</span>
+               </section>
+               <a href="https://thiskino.netlify.app/">Live demo</a>
+               <a href="https://github.com/thisjunghyewon/myFlix-client">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+               <h2>Pokemon Index</h2>
+               <img src="img/work/pokedex.JPG" class="grid-img" alt="">
+               <p>
+                  This app was designed with HTML, CSS, and ES6+ JavaScript for the average, working trainer who needs a
+                  simple, portable Pokédex for their quest to catch 'em all! I built it throughout the intro to
+                  JavaScript
+                  course of my CareerFoundry bootcamp.
+               </p>
+               <section class="skill-wrapper">
+                  <span class="skill-detail">JavaScript</span>
+                  <span class="skill-detail">jQuery</span>
+                  <span class="skill-detail">Bootstrap</span>
+                  <span class="skill-detail">HTML5</span>
+                  <span class="skill-detail">SCSS</span>
+               </section>
+               <a href="https://thisjunghyewon.github.io/pokedex/">Live demo</a>
+               <a href="https://github.com/thisjunghyewon/pokedex">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+               <h2>Portfolio Website</h2>
+               <img src="img/work/portfolio.JPG" class="grid-img" alt="">
+               <p>
+                  This is a responsive web page to showcase my professional portfolio, designed in such a way that it is
+                  also mobile ready. It is built with pure HTML, CSS (grid, flexbox) and some JavaScript code.
+               </p>
+               <a href="https://github.com/thisjunghyewon/portfolio-website">See project on GitHub</a>
+            </div>
+         </div>
+
+      </section>
+   </main>
+
    <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
          <a href="https://github.com/thisjunghyewon"><img src="img/github_icon.svg" alt="GitHub"></a>
-         <a href="https://www.linkedin.com/in/hyewon-jung-b76888237/"><img src="img/linkedin_icon.svg"
-               alt="LinkedIn"></a>
+         <a href="https://www.linkedin.com/in/this-hyewonjung/"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
       </div>
    </footer>
 
